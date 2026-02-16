@@ -9,8 +9,8 @@ variable "gcp_region" {
   default     = "us-central1"
 }
 
-variable "dynatrace_api_url" {
-  description = "Dynatrace API URL"
+variable "dynatrace_env_url" {
+  description = "Dynatrace ENV URL"
   type        = string
 }
 

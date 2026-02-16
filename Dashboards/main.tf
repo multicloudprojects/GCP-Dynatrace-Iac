@@ -1,5 +1,5 @@
-module "dashboards" {
-  source = "./dashboards"
+resource "dynatrace_dashboard" "line_chart" {
+  name = "EKS-GKE CPU Monitoring"
 
-  dynatrace_environment = var.dynatrace_environment
+  dashboard_json = file("${path.module}/line-chart.json")
 }
