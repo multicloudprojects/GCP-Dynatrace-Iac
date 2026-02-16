@@ -1,0 +1,26 @@
+{
+  "dashboardMetadata": {
+    "name": "Kubernetes Line Chart Dashboard",
+    "shared": true,
+    "owner": "platform-team"
+  },
+  "tiles": [
+    {
+      "name": "Pod CPU Usage",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 456,
+        "height": 304
+      },
+      "queries": [
+        {
+          "metric": "builtin:kubernetes.pod.cpu.usage",
+          "resolution": "Inf"
+        }
+      ]
+    }
+  ]
+}
